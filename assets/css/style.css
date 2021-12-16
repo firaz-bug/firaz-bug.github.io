@@ -449,8 +449,10 @@ section {
   align-items: center;
   justify-content: center;
   padding: 10px 50px;
+  width: 50%;
 }
 .clients img {
+  width: 100%;
   filter: none;
   transition: all 0.4s ease-in-out;
   display: block;
