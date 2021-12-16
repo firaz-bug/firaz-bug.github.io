@@ -95,7 +95,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 60px;
 }
 .logo-name h1{
-  font-size: 30px;
+  font-size: 40px;
   margin: 0;
   padding: 0;
   line-height: 1;
@@ -117,6 +117,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   list-style: none;
   align-items: center;
+  font-size: 300px;
 }
 .navbar li {
   position: relative;
@@ -439,20 +440,23 @@ section {
 --------------------------------------------------------------*/
 .clients {
   background: #f3f9fd;
-  padding: 10px 0;
+  padding: 10px 0px;
   text-align: center;
+  display:  flex;
 }
 .clients .col-lg-2 {
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 50px;
+  width: 50%;
 }
 .clients img {
-  width: 50%;
-  filter: grayscale(100);
+  width: 100%;
+  filter: none;
   transition: all 0.4s ease-in-out;
-  display: inline-block;
-  padding: 10px 0;
+  display: block;
+  padding: 10px 0px;
 }
 .clients img:hover {
   filter: none;
@@ -460,13 +464,23 @@ section {
 }
 @media (max-width: 768px) {
   .clients img {
-    width: 40%;
+    width: 100%;
   }
 }
 @media (max-width: 575px) {
   .clients img {
-    width: 30%;
+    width: 100%;
   }
+}
+
+@media (max-width: 575px) {
+.clients .col-lg-2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 50px;
+  width: 70%;
+}
 }
 
 /*--------------------------------------------------------------
@@ -768,32 +782,6 @@ section {
 }
 
 
-/*--------------------------------------------------------------
-# F.A.Q
---------------------------------------------------------------*/
-.faq .faq-item {
-  margin: 20px 0;
-  padding: 20px 0;
-  border-bottom: 1px solid #eeeeee;
-}
-.faq .faq-item i {
-  color: #8bc4ea;
-  font-size: 24px;
-  float: left;
-  line-height: 0;
-  padding: 13px 0 0 0;
-  margin: 0;
-}
-.faq .faq-item h4 {
-  font-size: 16px;
-  line-height: 26px;
-  font-weight: 500;
-  margin: 0 0 10px 32px;
-  font-family: "Poppins", sans-serif;
-}
-.faq .faq-item p {
-  font-size: 15px;
-}
 
 /*--------------------------------------------------------------
 # Contact
